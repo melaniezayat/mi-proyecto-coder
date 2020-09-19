@@ -1,0 +1,468 @@
+/*GENERALES*/
+/*Variables*/
+$creme-like-color: #ffebcd;
+$black: #000000;
+$white:#fefefe;
+$lato:'Lato', sans-serif;
+
+
+
+/*TEXTOS*/
+h2{
+width: 98%;
+padding: 0;
+margin-left: 2%;
+margin-top: 0px; 
+margin-bottom: 5px;
+color: #EB6E80;font-family: 'Lato', sans-serif; 
+}
+h4{
+  color: $creme-like-color;
+  font-family: $lato;
+}
+/*Logo-nombre*/
+.logo{
+    color: $creme-like-color; font-family: 'Amatic SC', cursive; font-weight: 700;font-size: 3rem;
+    display:flex; flex-flow: row wrap; justify-content: flex-start; text-decoration: none;
+}
+/*Contenedor del header principal - Padre de Menu y logo*/
+#logoMenu{
+    margin-right:2%;
+    margin-left: 2%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*MENU*/
+/*La idea es que cuando hagamos mobile esto se vuelva vertical*/
+
+#nav-toggle{
+  display: none;
+}
+
+label{
+  display: none;
+
+}
+
+  .menu{
+      list-style-type:none; 
+      display: flex; 
+      flex-flow: row nowrap; 
+      justify-content:flex-end; 
+      margin-right: 30px;
+        li{padding-left: 15px;
+      /*Fuente y estilo texto menú*/  
+           a{text-decoration: none; 
+            border-color: #E44E40; 
+            border-radius: 20px;
+            padding: 8px;
+            color: $creme-like-color; 
+            font-family: 'Lato', sans-serif; 
+            font-size: 1rem; 
+            font-weight: 700; 
+            cursor: pointer;
+            transition: 0.3s;
+            } 
+   /*Transiciones de menu nav*/
+               a:hover {  background-color: #E44E40   ;
+                          color: white;
+                        }}
+          }
+
+
+
+/*Titulos de cada html*/
+.titulosImportantes{ color: $creme-like-color; font-family: 'Montserrat', sans-serif; font-size: 2rem; margin-left:2%;} 
+/*Subtitulos dentro de cada html*/
+h3{
+  font-family: 'Lato', sans-serif; 
+  font-size: 1rem;
+}
+.titulosSecundarios{color: #EB6E80;font-family: 'Lato', sans-serif; margin-top: 0px; margin-bottom: 5px; display: flex;} 
+/*Parrafos*/
+.parrafos{color: rgb(195, 199, 202); font-family: 'Lato', sans-serif; padding:0;} /*Color comodin por ahora*/
+
+
+#servicios {
+  h2 {
+    color: #EB6E80;font-family: 'Lato', sans-serif; margin-top: 0px; margin-bottom: 5px; 
+  }
+  p {
+    color: rgb(195, 199, 202); font-family: 'Lato', sans-serif; padding:0;
+  }
+}
+
+
+.fondo{
+    background-color: black;
+}
+body{background-color: black;}
+
+/*Estilo call to action - Alineacion, margenes*/    
+  .boton{
+    display: block;
+    width: 230px;
+    margin: 35px auto;
+    background-color: #E44E40;
+    color: #dce0e4;
+    padding: 20px;
+    border-radius: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    clear: both;
+    cursor: pointer;
+    transition: 0.3s;
+  } 
+     /*Transiciones de boton*/
+  .boton:hover{    background-color: #dce0e4;
+    color: #E44E40;
+
+
+  }
+
+ 
+/* SECCION INDEX*/
+
+/*Galeria para landing*/
+#contenedorIndex{
+  width: 100%;
+  margin:auto;
+}
+#landing{
+  img{
+    display: block;
+    margin: auto;
+    max-width: 80%;
+  }
+}
+
+
+
+/*SECCION SOBRE MI - Continua al final x manejo de media queries*/
+
+/*Id de mi descripcion para SOBRE MI*/
+
+.sobreMi{
+  display: block;
+  img{
+    max-width: 100%;
+  }
+}
+#descripcion{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    padding: 5px;
+    font-size: 18px;
+    margin-left: 2%;}
+
+#descripcion p{color:rgb(195, 199, 202); 
+                font-family: 'Lato', sans-serif; 
+                padding:0;}
+
+
+/*SECCION PORTFOLIO*/
+.carousel-inner > .carousel-item > img { margin: 0 auto; }
+.carousel {
+    height:26em;
+    margin-top: 5%;
+}
+.carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto;
+}
+
+/*SECCION SERVICIOS*/
+#contenedorServicios{
+  width: 100%;
+}
+#servicios{
+  color: $creme-like-color; font-family: 'Montserrat', sans-serif; font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 2%;
+  margin-right: 2%;
+
+
+    div {
+      flex-basis: 100%; 
+      /* si flex-direction: row --> funciona como el "WIDTH" 
+      si flex-direction: column --> funciona como el "HEIGHT"  */ 
+      flex-shrink: 0; 
+
+      background-color: black;
+      border-color: rgb(82, 82, 82); 
+      border-radius: 10px; 
+      color:$creme-like-color;
+      font-family: 'Lato', sans-serif;
+      padding: 0;
+      font-size: 18px;
+    }
+   
+}
+
+/*SECCION CONTACTO*/
+#contenedorContacto{
+  width: 100%;
+}
+.contactoFondo{
+    background-size: cover;
+    background-attachment: fixed;
+    height:700px;}
+
+.title{
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 42px;
+        color: rgb(252, 252, 252);
+      }
+    
+      #title-Tag-Line{
+          font-size: 20px;
+      }
+    /* This will center the form */
+      .wrapper {
+        width: 80%;
+        height: 50%;
+        margin: 5% auto 0 auto; 
+      }
+    
+    /* form animation starts */
+.form {
+        background: #EBEBEB;
+        text-align: center; 
+        box-shadow: 0px 0px 20px 5px #AAA; 
+        border-radius: 10px;  
+        width: 100%; 
+        height: 400px;
+        margin: 30px auto 0 auto;
+        padding: 10px 10px;  
+        animation: bounce 1.5s infinite;
+      }
+    
+.name { 
+        background-color: #DF1B76;
+        border-bottom: 5px solid #B2175F;
+        color: white;
+        width:80%;
+      }
+    
+      ::-webkit-input-placeholder{
+          color: white;
+          font-size: 20px;
+      
+      .name:hover{
+        background-color: #DF1B76;
+        border-bottom: 5px solid #B2175F;
+        height:30px;
+        width:400px;}
+      }
+    
+.email {
+        background-color: #7239C1;  
+        border-bottom: 5px solid #502789;
+        height:50px;
+        width:80%;       
+      
+      .email:hover{
+        background-color: #7239C1;  
+        border-bottom: 5px solid #502789;
+        height:30px;
+        width:380px;
+       
+      }
+    }
+      .message {   
+        background-color: rgb(230, 108, 15);
+        border-bottom: 5px solid rgb(195, 35, 17);
+        overflow: hidden;
+        height: 100px;  
+        width:80%;
+      
+    
+      .message:hover{
+        background-color: #2DD7BB;
+        border-bottom: 5px solid #2BB09A;
+        height: 100px;
+        width:370px;}
+      }
+    
+      .submit{
+        border-radius:5px;
+        padding:10px;
+        background-color: #2DD7BB;  
+        border: none;
+        border-bottom: 5px solid #CB64B2; 
+        transform: translateY(-120px); 
+    
+      .submit:hover{
+        border-bottom: 5px solid #CB64B2;  
+        box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+      }}
+    
+      .entry{
+        display: block;
+        margin: 30px auto;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        transition: all 0.5s ease 0s;
+        box-shadow: 0px 0px 25px 2px #AAA;  
+      }
+    
+      /* Shadow to make it look like form is floating  */
+      .shadow{
+        box-shadow: 0px 0px 60px 5px #AAA;
+        opacity: 0.5;
+        border-radius: 100px;
+        width: 50%; 
+        margin: 50px auto 0 auto;
+        padding: 0 20px;  
+        animation: shadow 1.5s infinite;
+      }
+    .submit{
+        border-radius:5px;
+        padding:10px;
+        width:150px;
+        color: white;
+        background-color: #EE78D1;  
+        border: none;
+        border-bottom: 5px solid #CB64B2; 
+        margin-top: 150px; 
+    
+      }
+    
+    
+    
+      @keyframes bounce{
+        0%{
+          
+        }
+        50%{
+          transform: translate(0, 8px);
+        }
+    
+      }
+      @keyframes shadow{
+        0%{
+          
+        }
+        50%{
+          opacity: 0.8;
+          width: 50%;
+        }
+      }
+    
+/*Estilos del FOOTER - Falta modificar*/
+.social-footer {
+  padding: 1rem;
+  background: $black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .social-footer-icons {
+    li:last-of-type {
+      margin-right: 0;
+    }
+
+    .fa {
+      font-size: 1.3rem;
+      color: $creme-like-color;
+
+      &:hover {
+        color: darkgrey($black 25%);
+        transition: color 0.3s ease-in;
+      }
+    }
+  }
+}
+/*RESPONSIVE*/
+
+/* Para seccion SOBRE MI */
+@media (min-width: 768px) {
+  .sobreMi{
+    display: flex;
+     img{
+        width: 50%;
+         }
+    .descripcion{
+    width: 50%;    
+                }       
+  }
+}
+
+/* MENU RESPONSIVE */
+@media screen and (max-width: 768px){ 
+  #nav-toggle:checked + .menu { /* la "magia" que al hacer clic despliegue el menu" */
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    a {
+      font-size: 2rem;
+      text-align: center;
+      display: block;
+    }
+  }
+  label { /* las 3 rayitas */
+   display: block;
+   color: white;
+   font-size: 2.5rem;
+  }
+  nav .menu { /* el menu normal SIN responsive */
+    display: none;
+  }
+}
+
+
+
+/* contenedor */
+@media (min-width: 768px) {
+
+  #contenedorIndex  {
+      width: 740px;
+  }
+
+  .form {
+    width: 45%
+  }
+
+  #servicios {
+    flex-direction: row;
+    div {
+      flex-basis: 33.33%;
+      flex-shrink: 1;/* valor predeterminado, si hay deficit de espacio achica cada hijo */
+    }
+  }
+}
+
+@media (min-width: 992px) { 
+
+  #contenedorIndex {
+      width: 970px;
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+
+  #contenedorIndex {
+      width: 1140px;
+  }
+  
+}

@@ -1,0 +1,564 @@
+@charset "UTF-8";
+/*GENERALES*/
+/*Variables*/
+/*TEXTOS*/
+h2 {
+  width: 98%;
+  padding: 0;
+  margin-left: 2%;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  color: #EB6E80;
+  font-family: 'Lato', sans-serif;
+}
+
+h4 {
+  color: #ffebcd;
+  font-family: "Lato", sans-serif;
+}
+
+/*Logo-nombre*/
+.logo {
+  color: #ffebcd;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-decoration: none;
+}
+
+/*Contenedor del header principal - Padre de Menu y logo*/
+#logoMenu {
+  margin-right: 2%;
+  margin-left: 2%;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/*MENU*/
+/*La idea es que cuando hagamos mobile esto se vuelva vertical*/
+#nav-toggle {
+  display: none;
+}
+
+label {
+  display: none;
+}
+
+.menu {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 30px;
+}
+
+.menu li {
+  padding-left: 15px;
+  /*Fuente y estilo texto menú*/
+  /*Transiciones de menu nav*/
+}
+
+.menu li a {
+  text-decoration: none;
+  border-color: #E44E40;
+  border-radius: 20px;
+  padding: 8px;
+  color: #ffebcd;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  background-color: #E44E40;
+  color: white;
+}
+
+/*Titulos de cada html*/
+.titulosImportantes {
+  color: #ffebcd;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  margin-left: 2%;
+}
+
+/*Subtitulos dentro de cada html*/
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+}
+
+.titulosSecundarios {
+  color: #EB6E80;
+  font-family: 'Lato', sans-serif;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*Parrafos*/
+.parrafos {
+  color: #c3c7ca;
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+}
+
+/*Color comodin por ahora*/
+#servicios h2 {
+  color: #EB6E80;
+  font-family: 'Lato', sans-serif;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+#servicios p {
+  color: #c3c7ca;
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+}
+
+.fondo {
+  background-color: black;
+}
+
+body {
+  background-color: black;
+}
+
+/*Estilo call to action - Alineacion, margenes*/
+.boton {
+  display: block;
+  width: 230px;
+  margin: 35px auto;
+  background-color: #E44E40;
+  color: #dce0e4;
+  padding: 20px;
+  border-radius: 40px;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  clear: both;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/*Transiciones de boton*/
+.boton:hover {
+  background-color: #dce0e4;
+  color: #E44E40;
+}
+
+/* SECCION INDEX*/
+/*Galeria para landing*/
+#contenedorIndex {
+  width: 100%;
+  margin: auto;
+}
+
+#landing img {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+}
+
+/*SECCION SOBRE MI - Continua al final x manejo de media queries*/
+/*Id de mi descripcion para SOBRE MI*/
+.sobreMi {
+  display: block;
+}
+
+.sobreMi img {
+  max-width: 100%;
+}
+
+#descripcion {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  padding: 5px;
+  font-size: 18px;
+  margin-left: 2%;
+}
+
+#descripcion p {
+  color: #c3c7ca;
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+}
+
+/*SECCION PORTFOLIO*/
+.carousel-inner > .carousel-item > img {
+  margin: 0 auto;
+}
+
+.carousel {
+  height: 26em;
+  margin-top: 5%;
+}
+
+.carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto;
+}
+
+/*SECCION SERVICIOS*/
+#contenedorServicios {
+  width: 100%;
+}
+
+#servicios {
+  color: #ffebcd;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#servicios div {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  /* si flex-direction: row --> funciona como el "WIDTH" 
+      si flex-direction: column --> funciona como el "HEIGHT"  */
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-color: black;
+  border-color: #525252;
+  border-radius: 10px;
+  color: #ffebcd;
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+  font-size: 18px;
+}
+
+/*SECCION CONTACTO*/
+#contenedorContacto {
+  width: 100%;
+}
+
+.contactoFondo {
+  background-size: cover;
+  background-attachment: fixed;
+  height: 700px;
+}
+
+.title {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 42px;
+  color: #fcfcfc;
+}
+
+#title-Tag-Line {
+  font-size: 20px;
+}
+
+/* This will center the form */
+.wrapper {
+  width: 80%;
+  height: 50%;
+  margin: 5% auto 0 auto;
+}
+
+/* form animation starts */
+.form {
+  background: #EBEBEB;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 20px 5px #AAA;
+          box-shadow: 0px 0px 20px 5px #AAA;
+  border-radius: 10px;
+  width: 100%;
+  height: 400px;
+  margin: 30px auto 0 auto;
+  padding: 10px 10px;
+  -webkit-animation: bounce 1.5s infinite;
+          animation: bounce 1.5s infinite;
+}
+
+.name {
+  background-color: #DF1B76;
+  border-bottom: 5px solid #B2175F;
+  color: white;
+  width: 80%;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+  font-size: 20px;
+}
+
+::-webkit-input-placeholder .name:hover {
+  background-color: #DF1B76;
+  border-bottom: 5px solid #B2175F;
+  height: 30px;
+  width: 400px;
+}
+
+.email {
+  background-color: #7239C1;
+  border-bottom: 5px solid #502789;
+  height: 50px;
+  width: 80%;
+}
+
+.email .email:hover {
+  background-color: #7239C1;
+  border-bottom: 5px solid #502789;
+  height: 30px;
+  width: 380px;
+}
+
+.message {
+  background-color: #e66c0f;
+  border-bottom: 5px solid #c32311;
+  overflow: hidden;
+  height: 100px;
+  width: 80%;
+}
+
+.message .message:hover {
+  background-color: #2DD7BB;
+  border-bottom: 5px solid #2BB09A;
+  height: 100px;
+  width: 370px;
+}
+
+.submit {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #2DD7BB;
+  border: none;
+  border-bottom: 5px solid #CB64B2;
+  -webkit-transform: translateY(-120px);
+          transform: translateY(-120px);
+}
+
+.submit .submit:hover {
+  border-bottom: 5px solid #CB64B2;
+  -webkit-box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+          box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+}
+
+.entry {
+  display: block;
+  margin: 30px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  -webkit-box-shadow: 0px 0px 25px 2px #AAA;
+          box-shadow: 0px 0px 25px 2px #AAA;
+}
+
+/* Shadow to make it look like form is floating  */
+.shadow {
+  -webkit-box-shadow: 0px 0px 60px 5px #AAA;
+          box-shadow: 0px 0px 60px 5px #AAA;
+  opacity: 0.5;
+  border-radius: 100px;
+  width: 50%;
+  margin: 50px auto 0 auto;
+  padding: 0 20px;
+  -webkit-animation: shadow 1.5s infinite;
+          animation: shadow 1.5s infinite;
+}
+
+.submit {
+  border-radius: 5px;
+  padding: 10px;
+  width: 150px;
+  color: white;
+  background-color: #EE78D1;
+  border: none;
+  border-bottom: 5px solid #CB64B2;
+  margin-top: 150px;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+  }
+  50% {
+    -webkit-transform: translate(0, 8px);
+            transform: translate(0, 8px);
+  }
+}
+
+@keyframes bounce {
+  0% {
+  }
+  50% {
+    -webkit-transform: translate(0, 8px);
+            transform: translate(0, 8px);
+  }
+}
+
+@-webkit-keyframes shadow {
+  0% {
+  }
+  50% {
+    opacity: 0.8;
+    width: 50%;
+  }
+}
+
+@keyframes shadow {
+  0% {
+  }
+  50% {
+    opacity: 0.8;
+    width: 50%;
+  }
+}
+
+/*Estilos del FOOTER - Falta modificar*/
+.social-footer {
+  padding: 1rem;
+  background: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-footer .social-footer-icons li:last-of-type {
+  margin-right: 0;
+}
+
+.social-footer .social-footer-icons .fa {
+  font-size: 1.3rem;
+  color: #ffebcd;
+}
+
+.social-footer .social-footer-icons .fa:hover {
+  color: darkgrey(#000000 25%);
+  -webkit-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+
+/*RESPONSIVE*/
+/* Para seccion SOBRE MI */
+@media (min-width: 768px) {
+  .sobreMi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sobreMi img {
+    width: 50%;
+  }
+  .sobreMi .descripcion {
+    width: 50%;
+  }
+}
+
+/* MENU RESPONSIVE */
+@media screen and (max-width: 768px) {
+  #nav-toggle:checked + .menu {
+    /* la "magia" que al hacer clic despliegue el menu" */
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+  }
+  #nav-toggle:checked + .menu a {
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+  }
+  label {
+    /* las 3 rayitas */
+    display: block;
+    color: white;
+    font-size: 2.5rem;
+  }
+  nav .menu {
+    /* el menu normal SIN responsive */
+    display: none;
+  }
+}
+
+/* contenedor */
+@media (min-width: 768px) {
+  #contenedorIndex {
+    width: 740px;
+  }
+  .form {
+    width: 45%;
+  }
+  #servicios {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #servicios div {
+    -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    /* valor predeterminado, si hay deficit de espacio achica cada hijo */
+  }
+}
+
+@media (min-width: 992px) {
+  #contenedorIndex {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #contenedorIndex {
+    width: 1140px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
